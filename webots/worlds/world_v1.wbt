@@ -5,8 +5,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.29603902906376584 -0.7876169063972653 -0.5403892134639479 2.0212008412674054
-  position -2.7529410677949624 4.925550522168482 2.322540259703713
+  orientation -0.627824190448715 -0.602065884564285 -0.4933086828054424 1.4669946460619538
+  position -1.0369429148371596 5.515378986817568 3.89231056996828
 }
 TexturedBackground {
   texture "empty_office"
@@ -29,7 +29,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "/home/danilo/diplomski/krita/exports/arena_image_2.png"
+                "../textures/arena_image.png"
               ]
             }
             roughness 1
@@ -78,7 +78,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "/home/danilo/diplomski/krita/exports/arena_image_2.png"
+                "../textures/arena_image.png"
               ]
             }
             roughness 1
@@ -127,7 +127,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "/home/danilo/diplomski/krita/exports/arena_image_2.png"
+                "../textures/arena_image.png"
               ]
             }
             roughness 1
