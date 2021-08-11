@@ -5,8 +5,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.08235675817084911 -0.9893916122224927 -0.11967289604319277 4.482601047878759
-  position 4.3492179305304575 1.459484343120905 0.44777851459507645
+  orientation 0.06080333422560151 -0.9668483038308149 -0.24800667718133362 4.022344616000889
+  position 3.190453204668336 2.0400877348135955 -1.5104182411516454
 }
 TexturedBackground {
   texture "empty_office"
@@ -15,8 +15,8 @@ TexturedBackgroundLight {
   texture "empty_office"
 }
 SurveyorSrv1 {
-  translation 0.31995 0.17 1.36875
-  rotation 0 1 0 3.14159
+  translation 1.36918 0.06 1.22749
+  rotation 0 1 0 -1.3089953071795861
 }
 Solid {
   rotation -1 0 0 1.5707964
@@ -337,4 +337,888 @@ Solid {
   ]
   name "Scale_scale.obj"
   boundingObject USE SHAPE
+}
+Solid {
+  translation 0.800611 0.153 1.56
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.9
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "blueium_1"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.17
+  }
+}
+Solid {
+  translation 2.20061 0.153 1.56
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.9
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "blueium_2"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.17
+  }
+}
+Solid {
+  translation 1.96061 0.0345 0.949997
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.9
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "blueium_3"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.17
+  }
+}
+Solid {
+  translation 1.06061 0.0345 0.969997
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 0.6 0.9
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "blueium_4"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.17
+  }
+}
+Solid {
+  translation 0.899803 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_5"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.0998 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_6"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.2998 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_7"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.4998 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_8"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.4998 0.0345 0.75055
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_13"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 1.9698 0.0345 1.06055
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_17"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 1.9098 0.0345 1.15055
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_18"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.9398 0.0345 0.98055
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_20"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 1.0598 0.0345 1.06055
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_19"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.4898 0.0345 0.75055
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_15"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.4998 0.0345 0.460545
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_14"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.4898 0.0345 0.460545
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_16"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.6752 0.152777 2.015
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_9"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.1252 0.152777 2.015
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_1"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.8766 0.152786 2.015
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_10"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.3266 0.152786 2.015
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_2"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.699803 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_4"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.499803 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_3"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.820637 0.114521 1.79055
+  rotation -0.0001759249972304095 2.316099963537595e-05 -0.9999999842569816 -0.261795307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_12"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 2.12937 0.126679 1.79055
+  rotation -0.0001759199972306462 -2.3160199635409344e-05 0.9999999842578797 -0.2618053071795865
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "redium_11"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 1 0.153 1.56
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_3"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 2 0.153 1.56
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_4"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 2.4 0.153 1.56
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_5"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 2.5 0.0345 1.04
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_7"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 2.09 0.0345 1.04
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_9"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 0.98 0.0345 1.11
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_10"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 0.49 0.0345 1.04
+  rotation 1 0 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_8"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 2.776 0.15297 2.015
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_6"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 0.226 0.15297 2.015
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_1"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
+}
+Solid {
+  translation 0.6 0.153 1.56
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+  ]
+  name "greenium_2"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.12
+  }
 }
