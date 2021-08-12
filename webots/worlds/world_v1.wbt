@@ -1,12 +1,12 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 1
-  FPS 30
+  basicTimeStep 2
+  FPS 10
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.06080333422560151 -0.9668483038308149 -0.24800667718133362 4.022344616000889
-  position 3.190453204668336 2.0400877348135955 -1.5104182411516454
+  orientation 0.9356316896938454 0.35210701741911915 0.02477881201453857 5.426043259041257
+  position 1.792941254551059 3.0779765587245254 3.320108156385274
 }
 TexturedBackground {
   texture "empty_office"
@@ -15,7 +15,7 @@ TexturedBackgroundLight {
   texture "empty_office"
 }
 SurveyorSrv1 {
-  translation 1.36918 0.06 1.22749
+  translation 0.200408 0.04 1.54064
   rotation 0 1 0 -1.3089953071795861
 }
 Solid {
@@ -573,7 +573,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.9698 0.0345 1.06055
+  translation 1.9098 0.0345 1.06055
   rotation 1 0 0 0
   children [
     Shape {
@@ -599,7 +599,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.9098 0.0345 1.15055
+  translation 1.9698 0.0345 1.12055
   rotation 1 0 0 0
   children [
     Shape {
@@ -1220,5 +1220,101 @@ Solid {
   physics Physics {
     density -1
     mass 0.12
+  }
+}
+Robot {
+  translation 1.44 0.08 0.62
+  children [
+    DEF body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+      }
+      geometry Box {
+        size 0.2 0.05 0.1
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation 0.08 -0.01 0.055
+        rotation 1 0 0 1.57
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.3
+            }
+            geometry Cylinder {
+              height 0.01
+              radius 0.02
+            }
+          }
+        ]
+        boundingObject USE wheel
+        physics DEF wheel_physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation 0.08 -0.01 -0.055
+        rotation 1 0 0 1.57
+        children [
+          USE wheel
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation -0.08 -0.01 0.055
+        rotation 1 0 0 1.57
+        children [
+          USE wheel
+        ]
+        name "solid(2)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+      }
+      device [
+        RotationalMotor {
+        }
+      ]
+      endPoint Solid {
+        translation -0.08 -0.01 -0.055
+        rotation 1 0 0 1.57
+        children [
+          USE wheel
+        ]
+        name "solid(3)"
+        boundingObject USE wheel
+        physics USE wheel_physics
+      }
+    }
+  ]
+  boundingObject USE SHAPE
+  physics Physics {
   }
 }
