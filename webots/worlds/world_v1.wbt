@@ -1,12 +1,12 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 1
+  basicTimeStep 4
   FPS 10
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.19520192860911725 -0.9625279232053285 -0.1882450639919105 4.667968142744928
-  position 1.6080412166385596 0.48121501379086506 1.4573286240741559
+  orientation -0.23347128870952719 -0.9303466659614582 -0.282747658668841 1.802254173933564
+  position -1.4843429021784726 1.6522085467724021 1.7563358256660933
 }
 TexturedBackground {
   texture "empty_office"
@@ -181,7 +181,14 @@ Solid {
         }
       ]
       name "ground"
-      boundingObject USE SHAPE
+      boundingObject Transform {
+        translation 1500 0 1000
+        children [
+          Box {
+            size 3000 45 2000
+          }
+        ]
+      }
     }
     Solid {
       rotation 1 0 0 1.5707964
