@@ -1,23 +1,18 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 4
+  basicTimeStep 1
   FPS 10
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.23347128870952719 -0.9303466659614582 -0.282747658668841 1.802254173933564
-  position -1.4843429021784726 1.6522085467724021 1.7563358256660933
+  orientation 0.3719903614928284 0.8776291609449561 0.3023081653139505 4.816642906641412
+  position -2.5184604852303147 3.295649806035945 2.5311040193244256
 }
 TexturedBackground {
   texture "empty_office"
 }
 TexturedBackgroundLight {
   texture "empty_office"
-}
-SurveyorSrv1 {
-  translation 0.73763 0.04 0.454531
-  rotation 0 1 0 -1.3089953071795861
-  controller ""
 }
 Solid {
   rotation -1 0 0 1.5707964
@@ -347,7 +342,7 @@ Solid {
   boundingObject USE SHAPE
 }
 Solid {
-  translation 0.80061 0.15306 0.26
+  translation 0.80061 0.153001 1.55
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -360,6 +355,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "blueium_1"
@@ -387,6 +389,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "blueium_2"
   boundingObject Cylinder {
@@ -402,6 +411,13 @@ Solid {
   translation 1.96061 0.0345 0.949997
   rotation 1 0 0 0
   children [
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
     Shape {
       appearance PBRAppearance {
         baseColor 0.3 0.6 0.9
@@ -425,7 +441,7 @@ Solid {
   }
 }
 Solid {
-  translation 1.06061 0.0345 0.969997
+  translation 1.03061 0.0345 0.969997
   rotation 1 0 0 0
   children [
     Shape {
@@ -439,6 +455,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "blueium_4"
   boundingObject Cylinder {
@@ -448,32 +471,6 @@ Solid {
   physics Physics {
     density -1
     mass 0.17
-  }
-}
-Solid {
-  translation 0.899803 0.152797 1.56055
-  rotation 1 0 0 -1.57075
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.9 0 0
-        roughness 1
-      }
-      geometry Cylinder {
-        height 0.025
-        radius 0.038
-      }
-      castShadows FALSE
-    }
-  ]
-  name "redium_5"
-  boundingObject Cylinder {
-    height 0.025
-    radius 0.038
-  }
-  physics Physics {
-    density -1
-    mass 0.06
   }
 }
 Solid {
@@ -491,8 +488,81 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_6"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.8998 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
+  ]
+  name "redium_5"
+  boundingObject Cylinder {
+    height 0.025
+    radius 0.038
+  }
+  physics Physics {
+    density -1
+    mass 0.06
+  }
+}
+Solid {
+  translation 0.6998 0.152797 1.56055
+  rotation 1 0 0 -1.57075
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.9 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.025
+        radius 0.038
+      }
+      castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
+  ]
+  name "redium_4"
   boundingObject Cylinder {
     height 0.025
     radius 0.038
@@ -516,6 +586,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_7"
@@ -543,6 +620,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_8"
   boundingObject Cylinder {
@@ -568,6 +652,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_13"
@@ -595,6 +686,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_17"
   boundingObject Cylinder {
@@ -620,6 +718,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_18"
@@ -647,6 +752,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_20"
   boundingObject Cylinder {
@@ -672,6 +784,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_19"
@@ -699,6 +818,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_15"
   boundingObject Cylinder {
@@ -724,6 +850,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_14"
@@ -751,6 +884,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_16"
   boundingObject Cylinder {
@@ -776,6 +916,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_9"
@@ -803,6 +950,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_1"
   boundingObject Cylinder {
@@ -828,6 +982,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_10"
@@ -855,34 +1016,15 @@ Solid {
       }
       castShadows FALSE
     }
-  ]
-  name "redium_2"
-  boundingObject Cylinder {
-    height 0.025
-    radius 0.038
-  }
-  physics Physics {
-    density -1
-    mass 0.06
-  }
-}
-Solid {
-  translation 0.699803 0.152797 1.56055
-  rotation 1 0 0 -1.57075
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.9 0 0
-        roughness 1
-      }
-      geometry Cylinder {
-        height 0.025
-        radius 0.038
-      }
-      castShadows FALSE
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
-  name "redium_4"
+  name "redium_2"
   boundingObject Cylinder {
     height 0.025
     radius 0.038
@@ -906,6 +1048,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_3"
@@ -933,6 +1082,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "redium_12"
   boundingObject Cylinder {
@@ -958,6 +1114,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "redium_11"
@@ -985,6 +1148,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "greenium_3"
   boundingObject Cylinder {
@@ -1010,6 +1180,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "greenium_4"
@@ -1037,6 +1214,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "greenium_5"
   boundingObject Cylinder {
@@ -1062,6 +1246,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "greenium_7"
@@ -1089,6 +1280,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "greenium_9"
   boundingObject Cylinder {
@@ -1114,6 +1312,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "greenium_10"
@@ -1141,6 +1346,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "greenium_8"
   boundingObject Cylinder {
@@ -1166,6 +1378,13 @@ Solid {
         radius 0.038
       }
       castShadows FALSE
+    }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
     }
   ]
   name "greenium_6"
@@ -1193,6 +1412,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "greenium_1"
   boundingObject Cylinder {
@@ -1219,6 +1445,13 @@ Solid {
       }
       castShadows FALSE
     }
+    Connector {
+      rotation 1 0 0 -1.57
+      name "puck_connector"
+      model "vacuum_puck_connector"
+      type "passive"
+      numberOfRotations 0
+    }
   ]
   name "greenium_2"
   boundingObject Cylinder {
@@ -1230,167 +1463,9 @@ Solid {
     mass 0.12
   }
 }
-Solid {
-  translation 0.8 0.154 1.55
-  rotation -6.039012399610011e-07 -0.7071242809768207 0.7070892809629133 3.14159
-  children [
-    Connector {
-      rotation 1 0 0 -1.57
-      name "connector_v"
-      model "conn"
-      type "passive"
-      numberOfRotations 0
-    }
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0 1 0
-        roughness 1
-      }
-      geometry Cylinder {
-        height 0.025
-        radius 0.038
-      }
-      castShadows FALSE
-    }
-  ]
-  name "greenium_44"
-  boundingObject Cylinder {
-    height 0.025
-    radius 0.038
-  }
-  physics Physics {
-    density -1
-    mass 0.1
-  }
-}
 Robot {
-  translation 1.6935 0.199988 0.584381
-  rotation 0.9999999999921725 7.940559999937844e-08 -3.955889999969035e-06 -1.5708153071795863
-  children [
-    HingeJoint {
-      jointParameters HingeJointParameters {
-        axis 0 1 0
-        anchor 0 0.13 -0.13
-      }
-      device [
-        RotationalMotor {
-          name "wheel_left_joint"
-          maxVelocity 25
-        }
-        PositionSensor {
-          name "wheel_left_joint_sensor"
-        }
-      ]
-      endPoint Solid {
-        translation 0 0.13 -0.13
-        children [
-          Transform {
-            rotation 1 0 0 3.140796
-            children [
-              DEF WHEEL Shape {
-                appearance DEF dark PBRAppearance {
-                  baseColor 0.1 0.1 0.1
-                  roughness 1
-                  metalness 0.5
-                }
-                geometry Cylinder {
-                  height 0.01
-                  radius 0.04
-                }
-              }
-            ]
-          }
-        ]
-        name "wheel_left_link"
-        boundingObject USE WHEEL
-        physics DEF WHEEL_PHYSICS Physics {
-        }
-      }
-    }
-    HingeJoint {
-      jointParameters HingeJointParameters {
-        axis 0 1 0
-        anchor 0 -0.13 -0.13
-      }
-      device [
-        RotationalMotor {
-          name "wheel_right_joint"
-          maxVelocity 25
-        }
-        PositionSensor {
-          name "wheel_right_joint_sensor"
-        }
-      ]
-      endPoint Solid {
-        translation 0 -0.13 -0.13
-        children [
-          Transform {
-            rotation 1 0 0 3.140796
-            children [
-              USE WHEEL
-            ]
-          }
-        ]
-        name "wheel_right_link"
-        boundingObject USE WHEEL
-        physics USE WHEEL_PHYSICS
-      }
-    }
-    Solid {
-      translation -0.08 0 -0.15
-      children [
-        DEF FREE_WHEEL Shape {
-          appearance USE dark
-          geometry Sphere {
-            radius 0.02
-            subdivision 2
-          }
-        }
-      ]
-      name "solid(1)"
-      contactMaterial "free_wheel"
-      boundingObject USE FREE_WHEEL
-      physics Physics {
-      }
-    }
-    Solid {
-      translation 0.08 0 -0.15
-      children [
-        USE FREE_WHEEL
-      ]
-      contactMaterial "free_wheel"
-      boundingObject USE FREE_WHEEL
-      physics Physics {
-      }
-    }
-    DEF BODY Shape {
-      appearance DEF blue PBRAppearance {
-        baseColor 0.0235 0.2157 0.5882
-        metalness 0.5
-      }
-      geometry Box {
-        size 0.2 0.26 0.32
-      }
-    }
-    Transform {
-      translation 0 0 0.17
-    }
-  ]
-  name "robot_1"
-  boundingObject USE BODY
-  physics Physics {
-    density -1
-    mass 6
-    centerOfMass [
-      0 0 -0.1
-    ]
-  }
-  controller ""
-  synchronization FALSE
-}
-Robot {
-  translation 0.8 0.198993 1.26016
-  rotation 0.5771968951617173 0.5771968951617173 0.577656895078166 -2.093935307179586
+  translation 2.77776 0.209639 1.73017
+  rotation 0.5771965620055218 0.577197562004763 0.57765656165646 -2.093935307179586
   children [
     DEF body Shape {
       appearance PBRAppearance {
@@ -1509,31 +1584,121 @@ Robot {
       ]
       name "sensor_right"
     }
-    Solid {
-      translation 0.11 -7.96327e-06 -0.04
-      rotation 0 0 1 1.57
-      children [
-        Connector {
-          translation 0 -0.01 0
-          rotation 1 0 0 1.57
-          name "connector_v"
-          model "conn"
-          type "active"
-          numberOfRotations 0
-        }
-        Shape {
-          appearance PBRAppearance {
-            baseColor 1 1 0.2
-            metalness 0
-          }
-          geometry Cylinder {
-            height 0.03
-            radius 0.018
-          }
+    SliderJoint {
+      jointParameters JointParameters {
+        position 0.1
+      }
+      device [
+        LinearMotor {
+          name "lift_center"
         }
       ]
-      name "suction_cup"
-      physics Physics {
+      endPoint Solid {
+        translation 0.11 0 0.060000000000000005
+        rotation 0 0 1 1.57
+        children [
+          Connector {
+            translation 0 -0.01 0
+            rotation 1 0 0 1.57
+            name "vacuum_connector_center"
+            model "vacuum_puck_connector"
+            type "active"
+            numberOfRotations 0
+          }
+          Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.2
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.018
+            }
+          }
+        ]
+        name "suction_cup_center"
+        physics DEF suction_cup_ph Physics {
+          density -1
+          mass 0.01
+        }
+      }
+    }
+    SliderJoint {
+      jointParameters JointParameters {
+        position 0.1
+      }
+      device [
+        LinearMotor {
+          name "lift_right"
+        }
+      ]
+      endPoint Solid {
+        translation 0.11 -0.1 0.060000000000000005
+        rotation 0 0 1 1.57
+        children [
+          Connector {
+            translation 0 -0.01 0
+            rotation 1 0 0 1.57
+            name "vacuum_connector_right"
+            model "vacuum_puck_connector"
+            type "active"
+            numberOfRotations 0
+          }
+          Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.2
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.018
+            }
+          }
+        ]
+        name "suction_cup_right"
+        physics DEF suction_cup_ph Physics {
+          density -1
+          mass 0.01
+        }
+      }
+    }
+    SliderJoint {
+      jointParameters JointParameters {
+        position 0.1
+      }
+      device [
+        LinearMotor {
+          name "lift_left"
+        }
+      ]
+      endPoint Solid {
+        translation 0.11 0.1 0.060000000000000005
+        rotation 0 0 1 1.57
+        children [
+          Connector {
+            translation 0 -0.01 0
+            rotation 1 0 0 1.57
+            name "vacuum_connector_left"
+            model "vacuum_puck_connector"
+            type "active"
+            numberOfRotations 0
+          }
+          Shape {
+            appearance PBRAppearance {
+              baseColor 1 1 0.2
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.018
+            }
+          }
+        ]
+        name "suction_cup_left"
+        physics DEF suction_cup_ph Physics {
+          density -1
+          mass 0.01
+        }
       }
     }
   ]
