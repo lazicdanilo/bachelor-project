@@ -3,7 +3,9 @@
     <webots>
         <plugin type="webots_ros2_control::Ros2Control" />
 
-        <plugin type="eurobot_simulation.lift_driver.LiftDriver">
+        <plugin type="eurobot_simulation.lift_driver.LiftDriver" />
+        
+        <plugin type="eurobot_simulation.vacuum_pump_driver.VacuumPumpDriver">
         </plugin>
     </webots>
 
