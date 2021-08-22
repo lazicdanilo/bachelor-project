@@ -20,7 +20,7 @@ Build:
 ```bash
 source /opt/ros/foxy/local_setup.bash
 colcon build
-source install/local_setup.sh
+source install/local_setup.bash
 ```
 
 Run:
