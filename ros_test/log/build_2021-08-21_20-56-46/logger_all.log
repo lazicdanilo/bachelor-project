@@ -1,0 +1,89 @@
+[0.346s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.347s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='sequential', install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f3411dcce80>>, merge_install=False, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f3411dcce80>, verb_name='build', verb_parser=CustomArgumentParser(prog='colcon build', usage=None, description='Build a set of packages.', formatter_class=<class 'colcon_core.command.CustomFormatter'>, conflict_handler='error', add_help=True))
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.359s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.359s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/danilo/diplomski/ros_test'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.359s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.360s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.380s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/dipl) by extensions ['ignore', 'ignore_ament_install']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/dipl) by extension 'ignore'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/dipl) by extension 'ignore_ament_install'
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/dipl) by extensions ['ros']
+[0.381s] Level 1:colcon.colcon_core.package_identification:_identify(src/dipl) by extension 'ros'
+[0.385s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dipl' with type 'ros.ament_python' and name 'dipl'
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'dipl' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] DEBUG:colcon.colcon_core.verb:Building package 'dipl' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/danilo/diplomski/ros_test/build/dipl', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/danilo/diplomski/ros_test/install/dipl', 'merge_install': False, 'path': '/home/danilo/diplomski/ros_test/src/dipl', 'symlink_install': False, 'test_result_base': None}
+[0.422s] INFO:colcon.colcon_core.executor:Executing jobs using 'sequential' executor
+[0.423s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'dipl'
+[0.424s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/danilo/diplomski/ros_test/src/dipl' with build type 'ament_python'
+[0.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('dipl', 'ament_prefix_path')
+[0.429s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danilo/diplomski/ros_test/install/dipl/share/dipl/hook/ament_prefix_path.dsv'
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danilo/diplomski/ros_test/install/dipl/share/dipl/hook/ament_prefix_path.sh'
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.438s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.812s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/danilo/diplomski/ros_test/src/dipl'
+[0.813s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.817s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/foxy'
+[0.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/danilo/diplomski/ros_test/src/dipl': PYTHONPATH=/home/danilo/diplomski/ros_test/install/dipl/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dipl build --build-base /home/danilo/diplomski/ros_test/build/dipl/build install --prefix /home/danilo/diplomski/ros_test/install/dipl --record /home/danilo/diplomski/ros_test/build/dipl/install.log --single-version-externally-managed
+[1.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/danilo/diplomski/ros_test/src/dipl' returned '0': PYTHONPATH=/home/danilo/diplomski/ros_test/install/dipl/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/dipl build --build-base /home/danilo/diplomski/ros_test/build/dipl/build install --prefix /home/danilo/diplomski/ros_test/install/dipl --record /home/danilo/diplomski/ros_test/build/dipl/install.log --single-version-externally-managed
+[1.478s] Level 1:colcon.colcon_core.environment:checking '/home/danilo/diplomski/ros_test/install/dipl' for CMake module files
+[1.479s] Level 1:colcon.colcon_core.environment:checking '/home/danilo/diplomski/ros_test/install/dipl' for CMake config files
+[1.485s] Level 1:colcon.colcon_core.environment:checking '/home/danilo/diplomski/ros_test/install/dipl/lib'
+[1.485s] Level 1:colcon.colcon_core.environment:checking '/home/danilo/diplomski/ros_test/install/dipl/bin'
+[1.486s] Level 1:colcon.colcon_core.environment:checking '/home/danilo/diplomski/ros_test/install/dipl/lib/pkgconfig/dipl.pc'
+[1.486s] Level 1:colcon.colcon_core.environment:checking '/home/danilo/diplomski/ros_test/install/dipl/lib/python3.8/site-packages'
+[1.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('dipl', 'pythonpath')
+[1.487s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/danilo/diplomski/ros_test/install/dipl/share/dipl/hook/pythonpath.dsv'
+[1.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/danilo/diplomski/ros_test/install/dipl/share/dipl/hook/pythonpath.sh'
+[1.489s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dipl)
+[1.490s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/danilo/diplomski/ros_test/install/dipl/share/dipl/package.dsv'
+[1.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/danilo/diplomski/ros_test/install/dipl/share/dipl/package.sh'
+[1.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/danilo/diplomski/ros_test/install/dipl/share/colcon-core/packages/dipl)
+[1.495s] DEBUG:colcon.colcon_core.executor.sequential:run_until_complete 'dipl' finished with '0'
+[1.495s] DEBUG:colcon.colcon_core.executor.sequential:closing loop
+[1.496s] DEBUG:colcon.colcon_core.executor.sequential:loop closed
+[1.496s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.496s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/danilo/diplomski/ros_test/install/local_setup.sh'
+[1.498s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/danilo/diplomski/ros_test/install/_local_setup_util_sh.py'
+[1.502s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/danilo/diplomski/ros_test/install/setup.sh'
