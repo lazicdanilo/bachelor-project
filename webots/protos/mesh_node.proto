@@ -1,8 +1,0 @@
-#VRML_SIM R2021b utf8
-
-PROTO mesh_node []
-{
-  Mesh {
-    field MFString url ["/home/danilo/dipl2/blender/exports/table_without_scale.obj"]
-  }
-}
