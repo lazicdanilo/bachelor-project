@@ -10,6 +10,7 @@ class VacuumPumpDriver:
         self.__vacuum_pump_left = self.__robot.getDevice('vacuum_connector_left')
         self.__vacuum_pump_center = self.__robot.getDevice('vacuum_connector_center')
 
+        # This can't be here as it's initialized in lift_driver.py. 
         # rclpy.init(args=None)
 
         self.__vacuum_pump_right.enablePresence(1)
@@ -24,25 +25,28 @@ class VacuumPumpDriver:
         self.__node.create_subscription(Bool, 'vacuum_pump_center', self.__control_center_vacuum_pump, 1)
 
     def step(self):
-        pass
-        # self.__node.get_logger().info('step 1')
         rclpy.spin_once(self.__node, timeout_sec=0)
 
     def __control_right_vacuum_pump(self, state):
         if state.data == True:
+            self.__node.get_logger().info(f'Turning on right vacuum pump')
             self.__vacuum_pump_right.lock()
         else:
+            self.__node.get_logger().info(f'Turning off right vacuum pump')
             self.__vacuum_pump_right.unlock()
 
     def __control_left_vacuum_pump(self, state):
         if state.data == True:
+            self.__node.get_logger().info(f'Turning on left vacuum pump')
             self.__vacuum_pump_left.lock()
         else:
+            self.__node.get_logger().info(f'Turning off left vacuum pump')
             self.__vacuum_pump_left.unlock()
 
     def __control_center_vacuum_pump(self, state):
-        self.__node.get_logger().info(f'state = {state.data}')
         if state.data == True:
+            self.__node.get_logger().info(f'Turning on center vacuum pump')
             self.__vacuum_pump_center.lock()
         else:
+            self.__node.get_logger().info(f'Turning off center vacuum pump')
             self.__vacuum_pump_center.unlock()
