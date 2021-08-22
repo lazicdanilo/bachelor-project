@@ -1,6 +1,6 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 1
+  basicTimeStep 16
   FPS 10
   coordinateSystem "NUE"
 }
@@ -25,7 +25,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "/home/danilo/diplomski/webots/textures/arena_image.png"
+                "textures/arena_image.png"
               ]
             }
             roughness 1
@@ -74,7 +74,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "/home/danilo/diplomski/webots/textures/arena_image.png"
+                "textures/arena_image.png"
               ]
             }
             roughness 1
@@ -123,7 +123,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "/home/danilo/diplomski/webots/textures/arena_image.png"
+                "textures/arena_image.png"
               ]
             }
             roughness 1
