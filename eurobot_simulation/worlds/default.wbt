@@ -1,12 +1,12 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 16
+  basicTimeStep 8
   FPS 10
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.7147195591915061 -0.6506678290630913 -0.2565293899954208 5.2440210054444325
-  position 3.311726487076508 0.6924997833741362 2.307434980601263
+  orientation -0.4312498309181546 0.7627235515963376 0.4819505858211315 1.9415576407535196
+  position 3.327339118340015 1.5647498915099585 0.3055167109895656
 }
 TexturedBackground {
   texture "empty_office"
@@ -25,7 +25,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "textures/arena_image.png"
+                "/home/danilo/diplomski/blender/exports/arena_image_2.png"
               ]
             }
             roughness 1
@@ -74,7 +74,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "textures/arena_image.png"
+                "/home/danilo/diplomski/blender/exports/arena_image_2.png"
               ]
             }
             roughness 1
@@ -123,7 +123,7 @@ Solid {
           appearance PBRAppearance {
             baseColorMap ImageTexture {
               url [
-                "textures/arena_image.png"
+                "/home/danilo/diplomski/blender/exports/arena_image_2.png"
               ]
             }
             roughness 1
@@ -177,10 +177,10 @@ Solid {
       ]
       name "ground"
       boundingObject Transform {
-        translation 1500 0 1000
+        translation 1500 22 1000
         children [
-          Box {
-            size 3000 45 2000
+          Plane {
+            size 3 2
           }
         ]
       }
@@ -474,7 +474,7 @@ Solid {
   }
 }
 Solid {
-  translation 2.0998 0.152797 1.56055
+  translation 2.0996 0.152 1.555
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -1035,7 +1035,7 @@ Solid {
   }
 }
 Solid {
-  translation 0.499803 0.152797 1.56055
+  translation 0.499803 0.152797 1.55
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -1464,8 +1464,8 @@ Solid {
   }
 }
 Robot {
-  translation 2.77776 0.209639 1.73017
-  rotation 0.5771965620055218 0.577197562004763 0.57765656165646 -2.093935307179586
+  translation 2.775 0.193001 0.43
+  rotation 0.5771972288477798 0.5771982288481764 0.5776552290293683 -2.093935307179586
   children [
     DEF body Shape {
       appearance PBRAppearance {
@@ -1717,4 +1717,25 @@ Robot {
     ]
   }
   controller "<extern>"
+}
+Robot {
+  translation 1.49786 1.19412 -0.0772162
+  rotation -1 0 0 -2.094395307179586
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.7 0.5
+        metalness 0
+      }
+      geometry Cylinder {
+        height 0.07
+        radius 0.02
+      }
+    }
+    Camera {
+      translation 0 0.04 0
+      name "camera_1"
+    }
+  ]
+  name "camera_robot_1"
 }
