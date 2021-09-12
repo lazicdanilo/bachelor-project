@@ -5,8 +5,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.4312498309181546 0.7627235515963376 0.4819505858211315 1.9415576407535196
-  position 3.327339118340015 1.5647498915099585 0.3055167109895656
+  orientation -0.3784594812195034 0.9206409727664185 0.095857291526345 0.8483758109495646
+  position 6.2330598814243 1.682421009910709 3.559598053546868
 }
 TexturedBackground {
   texture "empty_office"
@@ -375,7 +375,7 @@ Solid {
   }
 }
 Solid {
-  translation 2.20061 0.153 1.56
+  translation 2.20061 0.153 1.55
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -573,7 +573,7 @@ Solid {
   }
 }
 Solid {
-  translation 2.2998 0.152797 1.56055
+  translation 2.2998 0.152797 1.55055
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -606,7 +606,7 @@ Solid {
   }
 }
 Solid {
-  translation 2.4998 0.152797 1.56055
+  translation 2.4998 0.152797 1.55055
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -1200,7 +1200,7 @@ Solid {
   }
 }
 Solid {
-  translation 2.4 0.153 1.56
+  translation 2.4 0.153 1.55
   rotation 1 0 0 -1.57075
   children [
     Shape {
@@ -1565,6 +1565,10 @@ Robot {
         DistanceSensor {
           rotation 0 0 1 1.57
           name "distance_sens_left"
+          lookupTable [
+            0 0 0
+            0.3 1000 0
+          ]
         }
         DEF sensor Shape {
           appearance PBRAppearance {
@@ -1585,6 +1589,10 @@ Robot {
         DistanceSensor {
           rotation 0 0 1 1.57
           name "distance_sens_right"
+          lookupTable [
+            0 0 0
+            0.3 1000 0
+          ]
         }
         USE sensor
       ]
@@ -1609,6 +1617,9 @@ Robot {
             name "vacuum_connector_center"
             model "vacuum_puck_connector"
             type "active"
+            distanceTolerance 0.05
+            axisTolerance 0.3
+            rotationTolerance 0.4
             numberOfRotations 0
           }
           Shape {
@@ -1648,6 +1659,9 @@ Robot {
             name "vacuum_connector_right"
             model "vacuum_puck_connector"
             type "active"
+            distanceTolerance 0.05
+            axisTolerance 0.4
+            rotationTolerance 0.5
             numberOfRotations 0
           }
           Shape {
@@ -1687,6 +1701,9 @@ Robot {
             name "vacuum_connector_left"
             model "vacuum_puck_connector"
             type "active"
+            distanceTolerance 0.05
+            axisTolerance 0.4
+            rotationTolerance 0.4
             numberOfRotations 0
           }
           Shape {
@@ -1719,8 +1736,8 @@ Robot {
   controller "<extern>"
 }
 Robot {
-  translation 1.49786 1.19412 -0.0772162
-  rotation -1 0 0 -2.094395307179586
+  translation 1.49786 1.17291 -0.0984299
+  rotation 4.429908117462217e-09 -0.9238806073868567 0.38268083737560327 3.14159
   children [
     Shape {
       appearance PBRAppearance {
@@ -1734,8 +1751,30 @@ Robot {
     }
     Camera {
       translation 0 0.04 0
+      rotation 1 0 0 -1.5707996938995747
       name "camera_1"
     }
   ]
   name "camera_robot_1"
+  controller "<extern>"
+}
+Solid {
+  translation 1.64 0.29 0.99
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.4 0
+        metalness 0
+      }
+      geometry Box {
+        size 0.3 0.4 0.3
+      }
+    }
+  ]
+  name "mock_robot"
+  boundingObject Box {
+    size 0.3 0.4 0.3
+  }
+  physics Physics {
+  }
 }

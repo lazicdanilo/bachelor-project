@@ -12,7 +12,9 @@ from webots_ros2_driver.webots_launcher import WebotsLauncher
 def generate_launch_description():
     package_dir = get_package_share_directory('eurobot_simulation')
     robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'robot_webots.urdf')).read_text()
+    robot_camera_description = pathlib.Path(os.path.join(package_dir, 'resource', 'robot_webots_camera.urdf')).read_text()
     ros2_control_params = os.path.join(package_dir, 'resource', 'ros2_control.yaml')
+    ros2_control_camera_params = os.path.join(package_dir, 'resource', 'ros2_control_camera.yaml')
     use_sim_time = LaunchConfiguration('use_sim_time', default=True)
 
     webots = WebotsLauncher(
@@ -52,12 +54,24 @@ def generate_launch_description():
             ('/diffdrive_controller/cmd_vel_unstamped', '/cmd_vel')
         ]
     )
+    
+    robot_camera_driver = Node(
+        package='webots_ros2_driver',
+        executable='driver',
+        output='screen',
+        parameters=[
+            {'robot_description': robot_camera_description,
+             'use_sim_time': use_sim_time},
+            ros2_control_camera_params
+        ]
+    )
 
     return LaunchDescription([
         joint_state_broadcaster_spawner,
         diffdrive_controller_spawner,
         webots,
         robot_driver,
+        robot_camera_driver,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
