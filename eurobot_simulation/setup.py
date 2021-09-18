@@ -12,9 +12,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/resource', [
             'resource/robot_webots.urdf',
-            'resource/robot_webots_camera.urdf',
             'resource/ros2_control.yaml',
-            'resource/ros2_control_camera.yaml'
         ]),
         ('share/' + package_name + '/worlds', [
             'worlds/default.wbt', 'worlds/.default.wbproj',

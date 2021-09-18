@@ -1,12 +1,21 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 8
-  FPS 10
+  basicTimeStep 16
+  FPS 30
   coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      material1 "ground"
+      material2 "wheel"
+      coulombFriction [
+        10
+      ]
+    }
+  ]
 }
 Viewpoint {
-  orientation -0.3784594812195034 0.9206409727664185 0.095857291526345 0.8483758109495646
-  position 6.2330598814243 1.682421009910709 3.559598053546868
+  orientation -0.3054409407671799 0.9132194549049168 0.26969623446838636 1.6958415409055734
+  position 5.132409439136536 2.119343926240748 0.6792174256049761
 }
 TexturedBackground {
   texture "empty_office"
@@ -176,6 +185,7 @@ Solid {
         }
       ]
       name "ground"
+      contactMaterial "ground"
       boundingObject Transform {
         translation 1500 22 1000
         children [
@@ -908,7 +918,7 @@ Solid {
   children [
     Shape {
       appearance PBRAppearance {
-        baseColor 0.9 0 0
+        baseColor 0.3 0.6 0.9
         roughness 1
       }
       geometry Cylinder {
@@ -1487,6 +1497,8 @@ Robot {
         }
         RotationalMotor {
           name "wheel_right"
+          maxVelocity 100
+          maxTorque 100
         }
       ]
       endPoint Solid {
@@ -1503,6 +1515,7 @@ Robot {
           }
         ]
         name "wheel_right"
+        contactMaterial "wheel"
         boundingObject USE wheel
         physics DEF wheel_ph Physics {
         }
@@ -1519,6 +1532,8 @@ Robot {
         }
         RotationalMotor {
           name "wheel_left"
+          maxVelocity 100
+          maxTorque 100
         }
       ]
       endPoint Solid {
@@ -1527,6 +1542,7 @@ Robot {
           USE wheel
         ]
         name "wheel_left"
+        contactMaterial "wheel"
         boundingObject USE wheel
         physics USE wheel_ph
       }
@@ -1724,6 +1740,28 @@ Robot {
         }
       }
     }
+    Solid {
+      translation 0.0729289 1.20119e-07 0.192247
+      rotation 0.1294279597735375 -0.1294279597735375 0.9831056944488314 -1.5878353071795859
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0.2
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.05
+            radius 0.02
+          }
+        }
+        Camera {
+          rotation 1 0 0 1.5707996938995747
+          name "robot_camera"
+          width 512
+          height 256
+        }
+      ]
+    }
   ]
   boundingObject USE body
   physics Physics {
@@ -1734,32 +1772,11 @@ Robot {
     ]
   }
   controller "<extern>"
-}
-Robot {
-  translation 1.49786 1.17291 -0.0984299
-  rotation 4.429908117462217e-09 -0.9238806073868567 0.38268083737560327 3.14159
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 1 0.7 0.5
-        metalness 0
-      }
-      geometry Cylinder {
-        height 0.07
-        radius 0.02
-      }
-    }
-    Camera {
-      translation 0 0.04 0
-      rotation 1 0 0 -1.5707996938995747
-      name "camera_1"
-    }
-  ]
-  name "camera_robot_1"
-  controller "<extern>"
+  supervisor TRUE
 }
 Solid {
-  translation 1.64 0.29 0.99
+  translation 2.84045 0.29 1.27383
+  rotation 0 1 0 0.015708
   children [
     Shape {
       appearance PBRAppearance {
