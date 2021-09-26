@@ -1,0 +1,21 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Uvod}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Poredjenje različitih simulatora}{4}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Webots}{4}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Gazebo}{4}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Unity}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}NVIDIA Isaac Sim}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Zakljucak}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Način modelovanja u Webots - u}{6}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Upravljanje robotom i izvrsavanje simulacije}{7}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Appendix}{8}{}%

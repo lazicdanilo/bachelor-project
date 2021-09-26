@@ -1,0 +1,81 @@
+U nastavku ove sekcije biće opsisana 4 različita softvera za simulaciju
+mobilnih robota. Na kraju ove sekcije mozete pronaći finlan odabir softvera
+u kome ćemo vršiti simulaciju u nastavku rada.
+\subsection{Webots}
+Webots je 3D simulaciona platforma razvijena od strane kompanije Cyberbotics.
+Jedan je od najkorišćenijih alata u edukacione svrhe, ali i u industriji.
+Ovaj alat je podržan na sledećim platformama: Linux, Windows, Mac OS.
+Svaki robot se može izmodelirati, pokrenuti i simulirati korišćenjem jednog
+(ili kombinacijom više) od sledećih programskih jezika: C, C++, Java, Python, Matlab, ili URBI.\cite{webots-vs-gazebo-2}
+Takodje Webots je kompatibilan sa eksternim bibliotekama, kao na primer OpenCV koji je
+koriscen u ovom radu u svrhe idnetifikacije objekata i njihovih boja.
+Webots odmah nakon instalacije sadrži veliki broj pripremljenih primera koje korisnik
+može da modifikuje i da se na njima obučava. Takodje sadrži veliki broj vec modeliranih
+robota kao i veliki broj senozora, aktuatora i objekata.
+Već postojeći modelirani roboti sadrže prethodno podešene senzore i aktuatore,
+neki čak i drajvere robota,tako da korisnik može brzo da ujde u svet mobilne
+robotike i da testira svoje ideje, modifikuje postojece drajvere ili doda svoje.
+Postojeći senozori variraju od jednostavnijih kao na primer laserski
+senzori distance ili LIDAR -a pa do komplikovanijih kao na primer GPS.
+Postojeci objekti mogu biti kocke, korisćene za na primer slaganje sa robotskim
+rukama, razna vrata, zidovi, stolice i mnogo drugih.
+Ovi objekti se mogu iskoristiti za brzo modeliranje sveta u kome će se naš robot
+kretati i sa kojim će imati interakciju.
+\newline
+Svaki od odjekata, senzora, akutuatora, robota ima definisanu masu, faktor trenja sa
+različitim podlogama kao i konstante opruge i prigušenja.
+Svaki od ovih paramteat se može menjati i podešavati zavsno od potrebe korisnika.
+\newline
+% Webots nudi mogućnost da se simulacije snime i da se prave slike iz simulacije. Ovo je korisno
+% kada je potrebno napraviti...
+Webots čuva podatke o svetu koji je korisnik kreirao u .wbt formatu. Fajl kreiran na jednoj
+platformi se može koristiti na svim ostalim. Takodje ovaj fajl korisnik može da pročita,
+odnosno fajl je textualan tako da ga korisnik moze menjati sa textualnim editorom.
+\newline
+Webots je besplatan i open source simulator.
+%Webots sadži svoj kompajler, možda dodati
+%Webots je laksi ya pocetnike cite omparing  Popular  Simulation  Environments  
+% in  the  Scope  of  Robotics  andReinforcement Learnin   @article{webots-vs-gazebo-2,
+
+\subsection{Gazebo}
+Gazebo nudi moćno, brzo i efikasno okruženje za testiranje autonomnih robota u različitim
+uslovima i na različitim terenima. Najviše se koristi za testiranje izbegavanja objekata 
+i mašinsku viziju. Takodje je koristan za testiranje algoritama,
+samog dizajna robota, obucavanje AI - a itd.
+Gazebo koristi više simulatora fizike uključujući ODE (Open Dynamics
+Engine), Bullet, Symbody i DART,
+tako da renderovanje sveta sa robotom je detaljno i precizno.
+Takodje osvetljenje, senke i teksture u svetu koje mogu biti krucijalne u odredjenim primenama
+mobilne robotike je ekstremno realistično.
+Gazebo takodje nudi veliki broj vec napravljenih i testiranih senozora, kao i
+veliki broj već izmodeliranih robota koji su spremni za korišćenje.\cite{gazebo}
+\newline
+Gazebo je hardverski zahtevnoiji za korišćenje od Webots - a, potrebno mu je više resursa
+za stabilan rad\cite{webots-vs-gazebo}\cite{webots-vs-gazebo-2}. Iako u ovom radu neće biti sprovoćene zahtevne simulacije
+svakako želmo da prikažemo optimalan način za izvršavanje istih. 
+\newline
+\newline
+Gazebo je besplatan i open source simulator.
+\subsection{Unity}
+Unity je prvobitno nastao kao platforma za kreiranje video igrica, nakon nekog vremena
+poceo je da se korisit u svrhe mobilne robotike. 
+\newline
+\newline
+Unity je besplatan za korišcenje u većini slucajeva, ali nije open source. 
+
+
+\subsection{NVIDIA Isaac Sim}
+NVIDIA Isaac Sim, powered by Omniverse, is a scalable robotics simulation
+application and synthetic data generation tool that powers photorealistic,
+physically-accurate virtual environments to develop, test,
+and manage AI-based robots.
+\newline
+\newline
+NVIDIA Isaac Sim je besplatan i open source simulator.
+
+\subsection{Zakljucak}
+Gazebo može biti komplikovan za početnike
+Webots je posebno poghodan za korisnike koji po prvi put imaju dodir sa simulacijom 
+fizike, ali webots koristi prilagodjenu ODE (Open Dynamics Engine)
+verziju i nudi manje podesivih
+parametara\cite{webots-vs-gazebo-2}.

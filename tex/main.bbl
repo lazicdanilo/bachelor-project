@@ -1,0 +1,103 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{webots-vs-gazebo}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AADCRRBFFC}{%
+         family={Angel\bibnamedelima Ayala},
+         familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+         suffix={Francisco\bibnamedelima Cruz},
+         suffixi={F\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Diego Campos Rodrigo Rubio Bruno\bibnamedelima Fernandes},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  B\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={Dazeley},
+         familyi={D\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAFCDCRRBFDR1}
+    \strng{fullhash}{AAFCDCRRBFDR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{A Comparison of Humanoid Robot Simulators: A Quantitative
+  Approach}
+    \field{journaltitle}{Escola Politécnica de Pernambuco, Universidade de
+  Pernambuco, Recife, Brasil}
+    \field{year}{2020}
+  \endentry
+
+  \entry{gazebo}{online}{}
+    \name{author}{1}{}{%
+      {{hash=GA}{%
+         family={Gopinath},
+         familyi={G\bibinitperiod},
+         given={Ashwin},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Gazebo}
+    \strng{namehash}{GA1}
+    \strng{fullhash}{GA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{edition}{1}
+    \field{title}{Gazebo: Let Your Robots Do The Talking}
+    \verb{url}
+    \verb https://www.electronicsforu.com/buyers-guides/gazebo-let-robots-talki
+    \verb ng/amp
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{webots-vs-gazebo-2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MKSRSSRGJL}{%
+         family={Marian\bibnamedelima Körber},
+         familyi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+         suffix={Johann\bibnamedelima Lange},
+         suffixi={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+         given={Stephan Rediske Simon Steinmann Roland\bibnamedelima Glück},
+         giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  R\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MKJLSRSSRG1}
+    \strng{fullhash}{MKJLSRSSRG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Comparing Popular Simulation Environments in the Scope of
+  Robotics and Reinforcement Learning}
+    \field{journaltitle}{Institute of Structures and Design, †Innovation
+  Services}
+    \field{year}{2021}
+  \endentry
+\enddatalist
+\endinput

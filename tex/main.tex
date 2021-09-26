@@ -1,0 +1,73 @@
+\documentclass[12pt,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[backend=bibtex]{biblatex}
+
+\addbibresource{bib/uni.bib}
+\renewcommand{\thesection}{\arabic{section}}
+
+% \usepackage[serbian]{babel}
+% \usepackage[english, latin]{babel}
+
+% \usepackage{cmsrb}
+% \usepackage[OT2,T1]{fontenc} %better to use T1, but OT1 will also work
+% \usepackage[serbian]{babel}
+
+\usepackage{fancyhdr}
+
+% L - Left, R - Right, C - Center, O - Odd page, E - Even page
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Simulacija mobilnog robota korisćenjem Webots - a i ROS2}
+\fancyfoot{}
+\fancyfoot[LE, RO]{\thepage}   
+\fancyfoot[LO, CE]{Section \thesection}
+\fancyfoot[CO, RE]{Danilo Lazic}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\graphicspath{{images/}}
+
+\title{
+    {Simulacija mobilnog robota korisćenjem Webots - a i ROS2}\\
+    {Fakultet tehnickih nauka, Novi Sad}\\  % todo: Add FTNs logo
+    }
+
+\author{Danilo Lazic}
+\date{September 2021}
+
+    
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Uvod}
+\input{chapters/introduction}
+\newpage
+
+% todo: add Đ to text
+\section{Poredjenje različitih simulatora}
+\input{chapters/comparing_simulators}
+\newpage
+
+\section{Način modelovanja u Webots - u}
+\input{chapters/robot_and_world_modeling_in_webots}
+\newpage
+
+\section{Upravljanje robotom i izvrsavanje simulacije}
+\input{chapters/robot_control_simulation_execution}
+\newpage
+
+\appendix
+\section{Appendix}
+\input{chapters/appendix}
+
+\printbibliography
+
+
+\end{document}
