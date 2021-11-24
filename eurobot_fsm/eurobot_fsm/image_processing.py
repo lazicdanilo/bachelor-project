@@ -51,7 +51,7 @@ class ImageProcessing:
     # Callback that will be called when we get data from camera
     def __image_data_callback(self, image_data):
 
-        # As we need only one image to process the colors we can destry the subscription right away
+        # As we need only one image to process the colors we can destroy the subscription right away
         self.destroy_image_processing_subscription()
         
         # Get the image from ROS2 message 
