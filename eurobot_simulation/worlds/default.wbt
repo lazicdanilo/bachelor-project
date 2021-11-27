@@ -4,18 +4,25 @@ WorldInfo {
   FPS 30
   coordinateSystem "NUE"
   contactProperties [
-    ContactProperties {
+    DEF omno_wheels_contact ContactProperties {
+      material1 "omno_wheel"
+      material2 "ground"
+      coulombFriction [
+        0
+      ]
+    }
+    DEF wheel_contact ContactProperties {
       material1 "ground"
       material2 "wheel"
       coulombFriction [
-        10
+        5
       ]
     }
   ]
 }
 Viewpoint {
-  orientation -0.3054409407671799 0.9132194549049168 0.26969623446838636 1.6958415409055734
-  position 5.132409439136536 2.119343926240748 0.6792174256049761
+  orientation 0.21923988796506513 -0.9454820921794332 -0.24082666981268278 4.704122885204754
+  position 5.111964815215114 1.6670986833024228 0.9408599262919884
 }
 TexturedBackground {
   texture "empty_office"
@@ -1560,7 +1567,8 @@ Robot {
           }
         }
       ]
-      name "solid(1)"
+      name "omno_wheel_back"
+      contactMaterial "omno_wheel"
       boundingObject USE free_wheel
       physics DEF free_wheel_ph Physics {
       }
@@ -1570,7 +1578,8 @@ Robot {
       children [
         USE free_wheel
       ]
-      name "solid(2)"
+      name "omno_wheel_front"
+      contactMaterial "omno_wheel"
       boundingObject USE free_wheel
       physics USE free_wheel_ph
     }
@@ -1761,6 +1770,7 @@ Robot {
           height 256
         }
       ]
+      name "camera_body"
     }
   ]
   boundingObject USE body
@@ -1772,10 +1782,9 @@ Robot {
     ]
   }
   controller "<extern>"
-  supervisor TRUE
 }
 Solid {
-  translation 2.84045 0.29 1.27383
+  translation 0.217862 0.29 0.713711
   rotation 0 1 0 0.015708
   children [
     Shape {
