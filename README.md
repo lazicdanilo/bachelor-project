@@ -1,10 +1,11 @@
-# diplomski
 # bachelor-project
-
 
 ## Getting Started
 
-Create a workspace (only the first time):
+### Install ROS2 Foxy
+Use the tutorial from [this](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html) link
+
+### Create a workspace (only the first time):
 ```bash
 mkdir -p eurobot_ws/src
 cd eurobot_ws
@@ -13,7 +14,7 @@ rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro foxy
 ```
 
-Build:
+### Build
 ```bash
 # only eurobot simulation
 source /opt/ros/foxy/local_setup.bash
@@ -31,12 +32,16 @@ colcon build
 source install/local_setup.sh
 ```
 
-Run:
+### Run
 ```bash
 # eurobot simulation
+source /opt/ros/foxy/local_setup.bash
+source install/local_setup.sh
 ros2 launch eurobot_simulation robot_launch.py
 
 # eurobot fsm
+source /opt/ros/foxy/local_setup.bash
+source install/local_setup.sh
 ros2 run eurobot_fsm eurobot_fsm
 ```
 
