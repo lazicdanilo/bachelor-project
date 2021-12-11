@@ -8,7 +8,6 @@
   <maintainer email="lukicdarkoo@gmail.com">Darko Lukic</maintainer>
   <license>TODO: License declaration</license>
 
-  <depend>rclcpy</depend>
   <depend>ros2_controllers</depend>
 
   <!-- Uncomment once v1.1.1 gets into the distribution. -->
