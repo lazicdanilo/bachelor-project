@@ -13,6 +13,10 @@ git clone https://github.com/lazicdanilo/bachelor-project.git src/eurobot
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro foxy
 ```
+### Install dependencies (For Ubuntu)
+```bash
+sudo apt install python3-rosdep2 install python3-colcon-ros ros-foxy-webots-ros2-driver ros-foxy-webots-ros2-control python3-opencv
+```
 
 ### Build
 ```bash
