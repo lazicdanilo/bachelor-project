@@ -5,6 +5,11 @@
 ### Install ROS2 Foxy
 Use the tutorial from [this](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html) link
 
+### Install Webots
+```bash
+sudo snap install webots
+```
+
 ### Create a workspace (only the first time):
 ```bash
 mkdir -p eurobot_ws/src
